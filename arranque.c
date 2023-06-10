@@ -1,5 +1,6 @@
 #include <16f84a.h>
-#fuses hs, nowdt, noput, nolvp, noprotect, brownout
+// eliminamos de #fuses los siguientes: brownout y nolvp
+#fuses hs, nowdt, noput, noprotect
 #use delay(clock=4000000)
 // #use fast_io(b)
 #USE standard_io(a)
